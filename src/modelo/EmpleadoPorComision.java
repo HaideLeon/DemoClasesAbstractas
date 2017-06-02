@@ -9,12 +9,12 @@ package modelo;
  *
  * @author sams
  */
-public class EmpleadoPorComision {public class EmpleadosPorComision extends Empleado {
+public class EmpleadoPorComision extends Empleado {
     
     private double ventasBrutas;
     private double tarifaComision;
     
-public  EmpleadosPorComision (String nombre, 
+public  EmpleadoPorComision (String nombre, 
         String ApellidoP, String nss, double ventas, double tarifa){
         super(nombre, ApellidoP, nss);
         
@@ -66,6 +66,4 @@ public  EmpleadosPorComision (String nombre,
     }
 
     
-}
-
 }
