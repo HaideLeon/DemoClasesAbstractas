@@ -9,12 +9,12 @@ package modelo;
  *
  * @author sams
  */
-public class EmpleadoPorHora extends Empleado{
+public class EmpleadoPorHoras extends Empleado{
     
     private double sueldo;
     private double horas;
     
-    public EmpleadoPorHora (String nombre, String ApellidoP, String nss,
+    public EmpleadoPorHoras (String nombre, String ApellidoP, String nss,
             double sueldoPorHoras, double horasDeTrabajo ){
          super (nombre,ApellidoP,nss);
          setSueldoPorHora(horas);
