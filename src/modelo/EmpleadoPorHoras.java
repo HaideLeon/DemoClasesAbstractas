@@ -17,8 +17,9 @@ public class EmpleadoPorHoras extends Empleado{
     public EmpleadoPorHoras (String nombre, String ApellidoP, String nss,
             double sueldoPorHoras, double horasDeTrabajo ){
          super (nombre,ApellidoP,nss);
-         setSueldoPorHora(horas);
-         setHorasDeTrabajo (horas);
+                 
+         setSueldoPorHora(sueldoPorHoras);
+         setHorasDeTrabajo (horasDeTrabajo);
     }
     
     public void setSueldoPorHora (double sueldoPorHoras ){
@@ -59,16 +60,16 @@ public class EmpleadoPorHoras extends Empleado{
         if (getHoras() <= 40){
             return getSueldo () * getHoras();
         }else{
-            return 40* getSueldo() + ( getHoras() - 40 )* getSueldo() * 1.5;
+            return 40 * getSueldo() + ( getHoras() - 40 )* getSueldo() * 1.5;
         }
     }
     
     @Override 
     public String toString (){
         
-        return "Empleado por horas : " + super.toString()
-                + "\nSu sueldo por horas: " + getSueldo()
-                + "\nHoras Trabajadas: " + getHoras();
+        return String.format("Empleado por horas : %s\n%s: $%,.2f; %s: %,.2f",
+                super.toString(), "sueldo por hora", getSueldo (),
+                "horas trabajadas", getHoras ());
     }
     
 }

@@ -43,8 +43,9 @@ public class EmpleadoAsalariado extends Empleado {
     
     @Override 
     public String toString(){
-        return "Es un Empledo Asalariado" + super.toString() +
-                "Su ingreso: " + getSalarioSemanal();
+        return String.format ("Es un Empledo Asalariado: %s\n%s: $%,.2f",
+                super.toString(), "salrio semanal", getSalarioSemanal());
+                
     
     }
     

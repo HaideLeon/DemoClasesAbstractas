@@ -60,9 +60,8 @@ public abstract class Empleado {
     @Override 
     public String toString (){
         
-        return "El nombre del esmpleado: " + getPrimerNombre () 
-                + "\n Su apellido Paterno: " + getApellidoPaterno() 
-                + "\n Numero se Seguro Sociall: " + getNumeroSS();
+        return String.format("%s %s\nNumero de seguro social : %s",
+                getPrimerNombre (), getApellidoPaterno(),getNumeroSS());
     
     }
     
